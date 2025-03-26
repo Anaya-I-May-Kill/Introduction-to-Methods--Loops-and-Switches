@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        background-color: #d12c4f;
+        color: #0b1b2a;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>String Methods & Loops</h1>
+
+    <p>NUMBERS FROM 1 - 10 :</p>
+    <p id="num"></p>
+
+    <script>
+      var number = "";
+
+      for (i = 1; i < 11; i++) {
+        number = number + i + "<br>";
+      }
+
+      document.getElementById("num").innerHTML = number;
+      document.write(`RANDOM VALUE : ${Math.floor(Math.random() * 100)}`);
+      document.write("<br><br>");
+
+      var date = new Date();
+      document.write(`CURRENT TIME : ${date.toLocaleTimeString()} <br><br>`);
+
+      document.write(
+        `CURRENT DATE : ${
+          date.getMonth() + 1
+        } - ${date.getDate()} - ${date.getFullYear()}`
+      );
+    </script>
+  </body>
+</html>
